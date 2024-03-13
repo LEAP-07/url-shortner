@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 
 const UrlSchema = new mongoose.Schema({
   urlId: {
@@ -22,6 +22,10 @@ const UrlSchema = new mongoose.Schema({
     type: String,
     default: Date.now,
   },
+  user:{
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  }
 });
 
 export default mongoose.model('Url', UrlSchema);
