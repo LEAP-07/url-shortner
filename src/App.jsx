@@ -1,5 +1,5 @@
 
-import './App.css'
+import './assets/styles/app.css'
 import { HomePage } from "./Pages/HomePage/";
 import { AuthPage } from "./Pages/AuthPage/";
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <AuthPage />
+    {/* <AuthPage /> */}
     <HomePage/>
     </>
   )
